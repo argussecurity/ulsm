@@ -1,0 +1,17 @@
+# Igore gcc output
+*.o
+*.o.cmd
+*.ko
+*.ko.cmd
+*.so
+*.so.cmd
+*.o.rc
+*.o.d
+modules.order
+Module.symvers
+*.mod.c
+.tmp_versions/
+
+#ignore capnproto output files
+process.capnp.c
+process.capnp.h

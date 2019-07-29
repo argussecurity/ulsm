@@ -1,0 +1,18 @@
+--- Makefile	2019-07-24 14:03:03.791922717 -0400
++++ Makefile	2019-07-23 13:51:11.985400588 -0400
+@@ -10,6 +10,7 @@
+ subdir-$(CONFIG_SECURITY_APPARMOR)	+= apparmor
+ subdir-$(CONFIG_SECURITY_YAMA)		+= yama
+ subdir-$(CONFIG_SECURITY_LOADPIN)	+= loadpin
++subdir-$(CONFIG_SECURITY_ULSM)		+= ulsm
+ 
+ # always enable default capabilities
+ obj-y					+= commoncap.o
+@@ -25,6 +26,7 @@
+ obj-$(CONFIG_SECURITY_APPARMOR)		+= apparmor/
+ obj-$(CONFIG_SECURITY_YAMA)		+= yama/
+ obj-$(CONFIG_SECURITY_LOADPIN)		+= loadpin/
++obj-$(CONFIG_SECURITY_ULSM)		+= ulsm/
+ obj-$(CONFIG_CGROUP_DEVICE)		+= device_cgroup.o
+ 
+ # Object integrity file lists

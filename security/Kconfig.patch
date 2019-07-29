@@ -1,0 +1,10 @@
+--- Kconfig	2019-07-24 14:03:02.274972017 -0400
++++ /home/osboxes/ulsm/security/Kconfig	2019-07-23 13:51:11.984400461 -0400
+@@ -235,6 +235,7 @@
+ source security/tomoyo/Kconfig
+ source security/apparmor/Kconfig
+ source security/loadpin/Kconfig
++source security/ulsm/Kconfig
+ source security/yama/Kconfig
+ 
+ source security/integrity/Kconfig
